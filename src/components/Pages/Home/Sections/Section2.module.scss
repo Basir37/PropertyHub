@@ -1,3 +1,4 @@
+// BUY RENT SELL  SECTION
 .section_2 {
     display: grid;
     grid-template-columns: 15% 35% 50%;
@@ -50,12 +51,12 @@
             width: 95%;
         }
         @media screen and (max-width: 678px) {
+            width: 100%;
             margin-top: 1rem;
             margin-bottom: 0.8rem;
-            width: 100%;
         }
-        @media screen and (max-width: 1024px) {
-            font-size: 2;
+        @media screen and (max-width: 500px) {
+            font-size: 2rem;
             margin-bottom: 1rem;
         }
     }
@@ -97,12 +98,10 @@
             margin-bottom: 0.5rem;
         }
         p {
+            color: var(--gray);
             margin-bottom: 0.8rem;
             font-size: 0.8rem;
-            color: var(--gray);
         }
-
-        //ARROWBUTTON
         div {
             margin-top: auto;
         }

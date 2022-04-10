@@ -13,13 +13,13 @@ const Footer = () => {
     <footer>
       <ul className={styles.brand}>
         <li>
-          <span>PropertyHub</span>
+          <span>Real</span>
         </li>
         <li>
           <span>Our Location</span>
         </li>
         <li>
-          <span>Call us: +880 1773 888631</span>
+          <span>Call Us : +88 01773888631</span>
         </li>
         <li>
           <div className={styles.socials}>
@@ -39,6 +39,21 @@ const Footer = () => {
       <ul className={styles.services}>
         <li>
           <span>Services</span>
+        </li>
+        <li>
+          <Link to="buy">Buy a House</Link>
+        </li>
+        <li>
+          <Link to="rent">Rent a House</Link>
+        </li>
+        <li>
+          <Link to="search">Sell a House</Link>
+        </li>
+      </ul>
+
+      <ul className={styles.company}>
+        <li>
+          <span>Company</span>
         </li>
         <li>
           <Link to="/about">About Us</Link>

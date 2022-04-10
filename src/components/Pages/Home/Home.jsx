@@ -8,11 +8,21 @@ import Footer from "./Sections/Footer";
 const Home = () => {
   return (
     <main>
+      {/* INTRO*/}
       <Section1 />
+
+      {/*BUY RENT SELL  */}
       <Section2 />
+
+      {/* BEST HOUSES */}
       <Section3 />
+
+      {/* HAPPY CLIENTS */}
       <Section4 />
+
+      {/* GET STARTED */}
       <Section5 />
+
       <Footer />
     </main>
   );

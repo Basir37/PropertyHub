@@ -1,21 +1,18 @@
 import styles from "./Section4.module.scss";
-import building3 from "../../../../assets/building3.jpg";
+import building3 from "../../../../assets/building4.jpg";
 
 const Section4 = () => {
   return (
     <section className={styles.section_4}>
-      {/* SECTION TITLE */}
       <div className={styles.section_4_title}>
-        <h1>Help People To Getting Their Dream House For More Than 17 Years</h1>
+        <h1>
+          Helps People To Getting Their Dream House For More Than 17 Years
+        </h1>
       </div>
-
-      {/* CONTENT */}
       <div className={styles.section_4_content}>
-        {/* IMAGE CONTAINER */}
         <div className={styles.image_container}>
           <img src={building3} alt="building" />
         </div>
-        {/* INFO */}
         <div className={styles.info}>
           <p>
             Search and find your dream house at affordable prices, but with the
@@ -30,6 +27,7 @@ const Section4 = () => {
                 <h2>10.234</h2>
                 <h3>Completed Houses</h3>
               </div>
+
               {/* FACT2 */}
               <div className={styles.fact}>
                 <h2>11.234</h2>

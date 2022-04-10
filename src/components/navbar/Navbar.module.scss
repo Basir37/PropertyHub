@@ -45,7 +45,7 @@ nav {
         @media screen and (max-width: 600px) {
             display: block;
             color: whitesmoke;
-            transition: all 200ms ease;
+            transition: color 200ms ease;
             padding-right: 5rem;
             padding-left: 5rem;
             &:hover {
@@ -81,7 +81,6 @@ nav {
         padding-right: 5rem;
         padding-left: 5rem;
     }
-
     &:hover {
         color: var(--dark-green);
         @media screen and (max-width: 600px) {

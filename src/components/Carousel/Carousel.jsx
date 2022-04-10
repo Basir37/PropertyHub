@@ -2,6 +2,7 @@ import { Swiper } from "swiper/react";
 import { Pagination } from "swiper";
 import "./Carousel.scss";
 
+// Import Swiper styles
 import "swiper/scss";
 import "swiper/scss/pagination";
 

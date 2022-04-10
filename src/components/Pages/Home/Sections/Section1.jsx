@@ -1,9 +1,10 @@
-import Navbar from "../../../navbar/Navbar";
 import styles from "./Section1.module.scss";
-
+import Navbar from "../../../navbar/Navbar";
 import { Link } from "react-router-dom";
+
 import { useState } from "react";
 import building1 from "../../../../assets/building1.jpg";
+//import debounce from "lodash.debounce";
 
 const Section1 = () => {
   const [price, setPrice] = useState("<100k");
@@ -23,13 +24,13 @@ const Section1 = () => {
       <div className={styles.section_1_content}>
         {/* SLOGAN */}
         <div className={styles.slogan}>
-          <h1>Ease Way to Find Your Dream House</h1>
+          <h1>Easy Way To Find Your Dream House</h1>
           <p>
             Search and find your dream house at affordable prices , but with the
             best quality. Only available in Real
           </p>
 
-          {/* SearchBox */}
+          {/* SEARCH BOX */}
           <div className={styles.search_container}>
             {/* LOCATION */}
             <div className={styles.location_container}>
@@ -38,15 +39,17 @@ const Section1 = () => {
                 type="text"
                 placeholder="Enter a Location"
                 onChange={(e) => setLocation(e.target.value)}
+                value={location}
               />
             </div>
-            {/* Price Range */}
+            {/* PRICE RANGE */}
             <div className={styles.price_container}>
               <span>Price Range</span>
               <select
                 name="Price"
                 id="price"
                 onChange={(e) => setPrice(e.target.value)}
+                value={price}
               >
                 <option value="<100k">{`<100k`}</option>
                 <option value="100k-200k">100k-200k</option>
@@ -55,14 +58,14 @@ const Section1 = () => {
               </select>
             </div>
 
-            {/* Search Button */}
+            {/* SEARCH BUTTON */}
             <button className={styles.btn_search}>
               <Link to="search">Search</Link>
             </button>
           </div>
         </div>
 
-        {/* Building Image */}
+        {/* BUILDING IMAGE */}
         <div className={styles.slogan_image}>
           <img src={building1} alt="building" />
         </div>

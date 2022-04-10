@@ -16,4 +16,23 @@ ArrowButton.defaultProps = {
   path: "/",
 };
 
-export { ArrowButton };
+const ActionButton = ({ children, clickFunc }) => {
+  return (
+    <div className={styles.btn_container}>
+      <button
+        onClick={() => {
+          clickFunc();
+        }}
+      >
+        <span>{children}</span>
+      </button>
+    </div>
+  );
+};
+
+ActionButton.defaultProps = {
+  children: "Test button",
+  clickFunc: console.log("clicked"),
+};
+
+export { ArrowButton, ActionButton };

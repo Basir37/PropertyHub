@@ -1,17 +1,18 @@
 import styles from "./Navbar.module.scss";
 import { NavLink, Link } from "react-router-dom";
+
 import { BsArrowRight } from "react-icons/bs";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { useState } from "react";
 
-import useClickOutside from "../../CustomHooks/ClickOutside";
+import { useState } from "react";
+import useClickOutside from "../../customHooks/ClickOutside";
 
 const Navbar = ({ BurgerColour }) => {
   const MenuLink = ({ url, path }) => {
     return (
       <li className={styles.navlink}>
         <NavLink
-          to={`${url}`}
+          to={`/${url}`}
           className={({ isActive }) => (isActive ? styles.active : undefined)}
         >
           {`${path}`}
@@ -20,26 +21,28 @@ const Navbar = ({ BurgerColour }) => {
     );
   };
 
-  const [isNavOpen, setIsNavOpen] = useState(false);
+  const [isNavOpen, setisNavOpen] = useState(false);
   let domNode = useClickOutside(() => {
-    setIsNavOpen(false);
+    setisNavOpen(false);
   });
 
   return (
     <div className={styles.navbar_container}>
       <nav>
-        {/* logo */}
+        {/* LOGO */}
         <div className={styles.brand_logo}>
-          <Link to="/">PropertyHub</Link>
+          <Link to="/">Real</Link>
         </div>
+
         {/* NAV-BURGER */}
         <div
           className={styles.mobile_menu}
           style={{ color: BurgerColour }}
-          onClick={() => setIsNavOpen(!isNavOpen)}
+          onClick={() => setisNavOpen(!isNavOpen)}
         >
           <FaBars />
         </div>
+
         {/* NAV */}
         <ul
           className={`${isNavOpen ? styles.ul_active : undefined} ${
@@ -49,11 +52,10 @@ const Navbar = ({ BurgerColour }) => {
         >
           <div
             className={styles.mobile_close}
-            onClick={() => setIsNavOpen(!isNavOpen)}
+            onClick={() => setisNavOpen(!isNavOpen)}
           >
             <FaTimes />
           </div>
-          {/* LI - MENULINK */}
           <MenuLink url="" path="Home" />
           <MenuLink url="buy" path="Buy" />
           <MenuLink url="rent" path="Rent" />
@@ -64,7 +66,7 @@ const Navbar = ({ BurgerColour }) => {
           </Link>
         </ul>
 
-        {/* LOGIN */}
+        {/* Login */}
         <Link to="/auth" className={styles.login_container}>
           <span style={{ color: BurgerColour }}>Login</span>
           <BsArrowRight style={{ color: BurgerColour }} />
@@ -75,7 +77,6 @@ const Navbar = ({ BurgerColour }) => {
 };
 
 Navbar.defaultProps = {
-  BurgerColour: "rgb(26,55,58)",
+  BurgerColour: "rgb(26, 55, 58)",
 };
-
 export default Navbar;

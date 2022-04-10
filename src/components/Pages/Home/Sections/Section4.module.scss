@@ -26,7 +26,7 @@
             }
         }
 
-        &:after {
+        &::after {
             position: absolute;
             z-index: -1;
             content: "";
@@ -47,9 +47,11 @@
         @media screen and (max-width: 665px) {
             padding-left: 2rem;
         }
+
         @media screen and (max-width: 425px) {
-            padding-left: 0;
+            padding-left: 0rem;
         }
+
         .image_container {
             grid-row: 1/2;
             grid-column: 1/3;
@@ -63,7 +65,7 @@
                 @media screen and (max-width: 890px) {
                     width: 500px;
                 }
-                @media screen and (max-width: 425) {
+                @media screen and (max-width: 425px) {
                     height: 580px;
                 }
             }
@@ -75,21 +77,26 @@
             padding: 2rem 3rem;
             margin: 3rem 0;
             background: white;
+
             @media screen and (max-width: 1066px) {
                 grid-column: 2/5;
             }
+
             @media screen and (max-width: 890px) {
                 padding: 2rem;
             }
+
             @media screen and (max-width: 665px) {
                 grid-column: 1/5;
                 margin-left: 30vw;
             }
+
             @media screen and (max-width: 570px) {
                 grid-column: 1/3;
                 margin-left: 3rem;
                 width: 300px;
             }
+
             @media screen and (max-width: 425px) {
                 position: absolute;
                 top: 50%;
@@ -118,6 +125,7 @@
                 @media screen and (max-width: 570px) {
                     justify-content: unset;
                 }
+
                 @media screen and (max-width: 425px) {
                     flex-direction: column;
                     align-items: center;
@@ -143,9 +151,9 @@
                     font-size: 1.3rem;
                 }
                 h3 {
-                    color: var(--dark-green);
-                    font-size: 0.8rem;
+                    color: var(--gray);
                     font-weight: 500;
+                    font-size: 0.8rem;
                     white-space: nowrap;
                 }
             }

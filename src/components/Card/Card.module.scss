@@ -13,6 +13,7 @@
     .image_container {
         position: relative;
         margin-bottom: 1rem;
+
         img {
             width: 320px;
             height: 250px;
@@ -34,6 +35,7 @@
                 font-weight: 600;
                 border: 1px solid transparent;
                 transition: all ease-in-out 200ms;
+
                 &:hover {
                     border-color: whitesmoke;
                     background: var(--dark-green);
@@ -47,6 +49,7 @@
         color: var(--dark-green);
         font-size: 1.1rem;
     }
+
     h4 {
         color: var(--gray);
         font-size: 0.9rem;
@@ -68,14 +71,19 @@
         align-items: center;
         justify-content: space-between;
         gap: 0.5rem;
-        .row1,
-        .row2 {
+        .row_1,
+        .row_2 {
             display: flex;
             flex-direction: column;
             gap: 1rem;
         }
 
-        .row1 {
+        @media screen and (max-width: 335px) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .row_1 {
             margin: 0.7rem 0;
         }
 
@@ -85,7 +93,6 @@
         .shortAndress {
             display: flex;
             gap: 4px;
-            align-items: center;
             svg {
                 color: rgb(165, 165, 165);
                 font-size: 1.1rem;
@@ -102,6 +109,12 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @media screen and (max-width: 335px) {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1.2rem;
+        }
+
         .card_btn {
             a {
                 font-size: 0.9rem;
@@ -113,11 +126,12 @@
 
                 &:hover {
                     background: whitesmoke;
-                    border-color: var(--darkgreen);
+                    border-color: var(--dark-green);
                     color: var(--dark-green);
                 }
             }
         }
+
         h2 {
             font-size: 1.5rem;
             color: var(--dark-green);
