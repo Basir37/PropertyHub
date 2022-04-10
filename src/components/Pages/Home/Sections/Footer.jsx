@@ -13,7 +13,7 @@ const Footer = () => {
     <footer>
       <ul className={styles.brand}>
         <li>
-          <span>Real</span>
+          <span>PropertyHub</span>
         </li>
         <li>
           <span>Our Location</span>

@@ -14,7 +14,7 @@ const CARD_DATA = gql`
   query {
     houses(
       filters: { categories: { Category: { contains: "Buy" } } }
-      pagination: { limit: 6 }
+      pagination: { limit: 100 }
     ) {
       data {
         id
@@ -48,6 +48,7 @@ const CARD_DATA = gql`
           Rent
           Short_Address
           Neighbourhood
+          Description
         }
       }
     }
