@@ -77,7 +77,7 @@ const Card = ({ info, showInfo, secondClass }) => {
 
 Card.defaultProps = {
   info: {
-    id: undefined,
+    id: 1,
     imageSource: building3,
     category: "Buy",
     city: "City",

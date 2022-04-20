@@ -89,6 +89,8 @@ const Section_3 = () => {
                       bathrooms: `${house.attributes.Bathrooms}`,
                       shortAndress: `${house.attributes.Short_Andress}`,
                       price: `${house.attributes.Price}`,
+                      id: `${house.id}`,
+                      Description: `${house.attributes.Description}`,
                     }}
                   />
                 </SwiperSlide>
