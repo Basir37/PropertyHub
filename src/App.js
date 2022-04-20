@@ -44,6 +44,18 @@ function App() {
                 <h1 style={{ marginTop: "3rem", color: "rgb(26, 55, 58)" }}>
                   ABOUT
                 </h1>
+                <br />
+                <span style={{ marginTop: "3rem", color: "rgb(37, 89, 102)" }}>
+                  WELCOME TO PROPERTYHUB{" "}
+                </span>
+                <p style={{ color: "rgb(26, 55, 58)" }}>
+                  We see change as opportunity, not a threat and start with the
+                  belief that there is a better way. Over the past 25 years
+                  we’ve created more than 5,000 new homes and 1.5 million sq ft
+                  of workspace in over 60 regeneration projects. Have a look at
+                  the short film below to learn more about how we’ve achieved
+                  this and what drives us.
+                </p>
               </main>
             }
           />
